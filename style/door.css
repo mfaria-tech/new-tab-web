@@ -1,0 +1,89 @@
+p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.div-img {
+    width: 105px;
+    height: 175px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+img {
+    width: 75px;
+    height: 70px;
+    transition: all 2200ms ease-in;
+    transform-origin: left;
+    position: absolute;
+    top: 95px;
+    right: -75px;
+}
+
+
+/*! =========================== */
+/*!          STYLE DOOR         */
+/*! =========================== */
+
+.door-wrapper {
+    width: 105px;
+    height: 175px;
+    border: 10px solid #4b43bb;
+    border-bottom: none;
+    border-radius: 6px 6px 0px 0px;
+    perspective: 1200px;
+    background: #151c3f;
+    box-shadow: 10px 10px 15px -5px #3e3e3f;
+    /* overflow: hidden; */
+}
+
+
+.door {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background: #655ddb;
+    border-bottom: none;
+    cursor: pointer;
+    transition: all 1000ms ease-in;
+    transform-origin: left;
+    position: relative;
+}
+
+.door:hover {
+    transform: rotateY(-160deg);
+}
+
+.door::before {
+    content: '';
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #f4cf69;
+    display: block;
+    position: absolute;
+    top: calc(50% - 5px);
+    border: 1px solid #f2b716;
+    right: 7px;
+}
+
+
+.msg-door {
+    background: white;
+    margin: 9px;
+    padding: 4px;
+    height: 32px;
+}
+
+
+.door:hover + div > img {
+    transform: translateX(-75px);
+    transition-delay: 880ms;
+}
