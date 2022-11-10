@@ -1,0 +1,66 @@
+/*! =========================== */
+/*!         STYLE PANNEL        */
+/*! =========================== */
+
+.pannel-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0px 9px;
+}
+
+
+/* !--  ICONS  -- */
+div[id*="link__"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 1px;
+    height: 62px;
+    transform: scale(calc(5/6));
+    background: white;
+    border-radius: 12px;
+}
+
+
+.icon-pannel {
+    display: inline-block;
+    height: 64px;
+    vertical-align: top;
+    width: 64px;
+}
+
+
+/* !--  ICONS - Position Images -- */
+span[id*="icon__"] {
+    background-size: 64px;
+    background-repeat: no-repeat;
+}
+
+span[id*="icon__"]:hover {
+    opacity: .8;
+}
+
+
+#icon__gmail {
+    background-image: url(gmail.png);
+}
+
+#icon__drive {
+    background-image: url(drive.png);
+}
+
+#icon__docs_d {
+    background-image: url(docs_d.png);
+}
+
+#icon__docs_s {
+    background-image: url(docs_s.png);
+}
+
+#icon__github {
+    background-image: url(invertocat.png);
+    background-size: 55px;
+    background-position: center;
+}
