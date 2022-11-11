@@ -7,6 +7,7 @@
  *      Set global variables
  */
 
+
 // Set elements that static in DOM
 const BTN_PLUS = document.querySelector("#link__shortcut-plus .image");
 
@@ -15,3 +16,4 @@ const INPUTS = document.querySelectorAll("input[id*='shortcut__'"); // array of 
 
 const BTN_CANCEL = document.getElementById("btn__cancel");
 const BTN_ADD =  document.getElementById("btn__add");
+

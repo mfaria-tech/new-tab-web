@@ -34,6 +34,12 @@ function ObserveInputs() {
 }
 
 
+// Close Form
+function ClosePopup() {
+    POPUP.removeAttribute("open");
+}
+
+
 // Add observer event
 // Check if inputs have value
 if(POPUP && INPUTS) {
@@ -44,7 +50,10 @@ if(POPUP && INPUTS) {
             // populate inputs variable with valid INPUTS elements
             inputs.push(INPUTS[i]);
         }
-    }
-
-    
+    }   
 }
+
+
+if(POPUP && BTN_CANCEL)
+    BTN_CANCEL.addEventListener("click", ClosePopup);
+

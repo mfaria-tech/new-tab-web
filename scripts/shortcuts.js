@@ -13,21 +13,23 @@
 
 
 // Function to display POPUP
-function DisplayPopup () {
+function DisplayPopup() {
     POPUP.setAttribute("open", "");
 }
 
 
 // Function to create new shortcut button
-function CreateShortcut () {
+function CreateShortcut() {
 
 }
 
 
 // Function to update shortcuts and close Popup
-function UpdateShortcuts () {
+function UpdateShortcuts() {
 
 }
+
+
 
 
 // Add event on click to button plus
