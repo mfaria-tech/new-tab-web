@@ -22,3 +22,65 @@ dialog[open] {
     justify-content: center;
     align-items: center;
 }
+
+
+/*! =========================== */
+/*!          STYLE FORM         */
+/*! =========================== */
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 546px;
+    height: 246px;
+    background-color: rgb(32, 33, 36);
+    background-image: linear-gradient(rgba(255, 255, 255, .04),rgba(255, 255, 255, .04));
+    color: rgba(255, 255, 255, .8);
+    padding: 18px;
+    border-radius: 12px;
+}
+
+
+form span {
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div label {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+form div input {
+    width: 510px;
+    height: 21px;
+    background-color: #d6d6d6;
+    color: #1b1b1b;
+    padding: 3px 18px;
+    font-size: 14px;
+}
+
+form div.buttons {
+    flex-direction: row;
+    align-self: flex-end;
+    margin-top: 36px;
+}
+
+form div button {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 24px;
+    margin: 0 6px;
+}
+

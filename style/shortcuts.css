@@ -1,10 +1,15 @@
-p, span {
+.shortcuts-area p,
+.shortcuts-area span {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     font-weight: bold;
     font-size: 12px;
 }
 
+
+.shortcuts div {
+    margin: 0;
+}
 
 .shortcuts-area {
     display: flex;
@@ -27,10 +32,18 @@ div[id*="link__shortcut-"] {
     text-align: center;
     flex-direction: column;
     width: auto;
-    height: auto;
-    max-width: 56px;
+    height: 115px;
+    max-width: 115px;
+    padding: 12px;
     background-color: transparent;
+    border-radius: 9px;
+    transition: all 100ms ease-in-out;
 }
+
+div[id*="link__shortcut-"]:hover {
+    background-color: rgb(245, 226, 212, 0.5);
+}
+
 
 div[id*="link__shortcut-"] .image {
     display: flex;
@@ -46,11 +59,29 @@ div[id*="link__shortcut-"] .image {
     cursor: pointer;
 }
 
+div[id*="link__shortcut-"] .image:hover {
+    opacity: 0.7;
+}
+
+
 div[id*="link__shortcut-"] .description {
     font-size: 11px;
 }
 
-div[id*="link__shortcut-"] .image:hover {
-    opacity: 0.8;
+
+div[id*="link__shortcut-"] img.more-option {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 100%;
+    background-color: rgba(226, 205, 190, 0.7);
+    opacity: 0;
+    transition: all 100ms ease-in;
+    cursor: pointer;
 }
+
+div[id*="link__shortcut-"] img.more-option:hover {
+    opacity: 0.9;
+}
+
 

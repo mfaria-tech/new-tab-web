@@ -11,8 +11,24 @@
 // Sintaxe strict mode para todo o script
 "use strict";
 
-// Added event on click to button plus
-const BTN_PLUS = document.getElementById("link__shortcut-plus");
-const POPUP = document.getElementById("dialog__form");
 
-alert(POPUP.textContent);
+// Function to display POPUP
+function DisplayPopup () {
+    POPUP.setAttribute("open", "");
+}
+
+
+// Function to create new shortcut button
+function CreateShortcut () {
+
+}
+
+
+// Function to update shortcuts and close Popup
+function UpdateShortcuts () {
+
+}
+
+
+// Add event on click to button plus
+BTN_PLUS.addEventListener("click", DisplayPopup);
