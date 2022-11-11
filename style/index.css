@@ -74,6 +74,14 @@ footer {
 }
 
 
+.shortcuts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /*! =========================== */
 /*!        STYLE BY SUM         */
 /*! =========================== */
@@ -92,4 +100,10 @@ iframe.chrome-new-page {
 
 .secret-msg span.message {
     width: 210px;
+}
+
+
+.shortcuts iframe {
+    width: 564px;
+    height: auto;
 }

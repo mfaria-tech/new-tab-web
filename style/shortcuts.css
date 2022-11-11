@@ -1,0 +1,52 @@
+p, span {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.shortcuts-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 564px;
+}
+
+
+/*! =========================== */
+/*!        STYLE BUTTONS        */
+/*! =========================== */
+
+div[id*="link__shortcut-"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 56px;
+}
+
+div[id*="link__shortcut-"] .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    font-size: 27px;
+    margin: 6px;
+    box-shadow: 0 0 6px 0 rgba(23, 23, 23, 0.15);
+    cursor: pointer;
+}
+
+div[id*="link__shortcut-"] .description {
+    font-size: 11px;
+}
+
+div[id*="link__shortcut-"] .image:hover {
+    opacity: 0.8;
+}
