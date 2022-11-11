@@ -1,0 +1,24 @@
+/*! =========================== */
+/*!        STYLE DIALOG         */
+/*! =========================== */
+
+dialog {
+    z-index: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: rgba(23, 23, 23, 0.3);
+    border: 0 solid transparent;
+}
+
+dialog[open] {
+    z-index: 10;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

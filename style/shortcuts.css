@@ -26,7 +26,10 @@ div[id*="link__shortcut-"] {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    width: auto;
+    height: auto;
     max-width: 56px;
+    background-color: transparent;
 }
 
 div[id*="link__shortcut-"] .image {
@@ -50,3 +53,4 @@ div[id*="link__shortcut-"] .description {
 div[id*="link__shortcut-"] .image:hover {
     opacity: 0.8;
 }
+
