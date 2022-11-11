@@ -16,8 +16,8 @@
 function CheckURLStructure (url) {
     let res = false;
     
-    const RGX_PROT  = new RegExp(/(\w{2}[a-zA-Z]\:\/\/)/, "gm");
-    const RGX_DOMAIN = new RegExp(/([a-zA-Z]\.[a-zA-z]\w)/, "gm");
+    const RGX_PROT  = new RegExp(/(\w{3}\:\/\/)/, "gm");
+    const RGX_DOMAIN = new RegExp(/(\w\.\w{2})/, "gm");
     
     
     // variaveis do tipo booleano
@@ -27,14 +27,16 @@ function CheckURLStructure (url) {
 
     
     if(protvalid || domainvalid) {
-        if(domainvalid) {
-            const RGX_PREF = new RegExp(/([^a-zA-z][a-zA-Z]{2})/, "gm");
-            let iurl = url.substr(0, 5).search(RGX_PREF);
+        if(!protvalid) {
+            if(domainvalid) {
+                const RGX_PREF = new RegExp(/(\W\w{2})/, "gm");
+                let iurl = url.substr(0, 5).search(RGX_PREF);
             
-            if(iurl !== -1)
-            url = url.substr(iurl + 1);
+                if(iurl !== -1)
+                url = url.substr(iurl + 1);
             
-            url = "https://" + url;
+                url = "https://" + url;
+            }
         }
 
         // Atualizar variavel txtSearch, 
