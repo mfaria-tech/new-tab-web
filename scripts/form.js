@@ -10,8 +10,19 @@
 
 let inputs = [];
 
+
+// Clear inputs form
+function ClearForm() {
+    for(let i in INPUTS) {
+        if(parseInt(i) >= 0) {
+            INPUTS[i].value = "";
+        }
+    }  
+}
+
+
 function ObserveInputs() {
-    if(POPUP.hasAttribute("open")) {
+    if(POPUP_FORM.hasAttribute("open")) {
         let validinputs = true;
         let valueinput = "";
 
@@ -34,15 +45,29 @@ function ObserveInputs() {
 }
 
 
+// Function to create new shortcut button
+function CreateShortcut() {
+
+}
+
+
+// Function to update shortcuts and close Popup
+function UpdateShortcuts() {
+
+}
+
+
 // Close Form
 function ClosePopup() {
-    POPUP.removeAttribute("open");
+    ClearForm();
+
+    POPUP_FORM.removeAttribute("open");
 }
 
 
 // Add observer event
 // Check if inputs have value
-if(POPUP && INPUTS) {
+if(POPUP_FORM && INPUTS) {
     for(let i in INPUTS) {
         if(parseInt(i) >= 0) {
             INPUTS[i].addEventListener("keyup", ObserveInputs);
@@ -54,6 +79,6 @@ if(POPUP && INPUTS) {
 }
 
 
-if(POPUP && BTN_CANCEL)
+if(POPUP_FORM && BTN_CANCEL)
     BTN_CANCEL.addEventListener("click", ClosePopup);
 

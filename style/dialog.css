@@ -84,3 +84,65 @@ form div button {
     margin: 0 6px;
 }
 
+
+/*! =========================== */
+/*!         STYLE DONUT         */
+/*! =========================== */
+
+.popup-donut {
+    background-color: #1f252a;
+    height: auto;
+    width: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.popup-donut div:nth-child(1) {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-donut span {
+    font-size: 21px;
+}
+
+
+.popup-donut span {
+    border-right: 4px solid;
+    width: 20ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(20), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.popup-donut button.close-donut {
+    position: relative;
+    border-radius: 100%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    top: -10px;
+    right: -10px;
+    font-size: 21px;
+    background-color: #748899;
+    color: #1f252a;
+    font-weight: bold;
+}

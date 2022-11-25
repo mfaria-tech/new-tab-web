@@ -11,7 +11,8 @@
 // Set elements that static in DOM
 const BTN_PLUS = document.querySelector("#link__shortcut-plus .image");
 
-const POPUP = document.getElementById("dialog__form");
+const POPUP_FORM = document.getElementById("dialog__form");
+const POPUP_DONUT = document.getElementById("dialog__donut");
 const INPUTS = document.querySelectorAll("input[id*='shortcut__'"); // array of inputs
 
 const BTN_CANCEL = document.getElementById("btn__cancel");

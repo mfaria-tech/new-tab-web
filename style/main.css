@@ -1,3 +1,15 @@
+/* !-- VARIAVEIS LOCAIS -- */
+:root {
+    --ntp-realbox-border-radius: calc(0.5 * var(--ntp-realbox-height));
+    --ntp-realbox-height: 44px;
+
+    /* DEFAULT SIZE ELEMENTS */
+    --default-border-radius: 9px;
+}
+
+
+/* !-- Default Style -- */
+
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,4 +24,12 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
 }

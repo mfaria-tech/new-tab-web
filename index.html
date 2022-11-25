@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="style/query-area.css" />
     <link rel="stylesheet" href="style/shortcuts.css" />
     <link rel="stylesheet" href="style/dialog.css" />
+    <link rel="stylesheet" href="style/donuts.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
     <title>Nova guia</title>
-    <script src="data/shortcuts.json" type="text/javascript"></script>
+    <script src="scripts/donuts.js" type="text/javascript"></script>
 </head>
 <body>
-
+    
     <div class="screen-query">
         <header>
             <div class="pannel-menu">
@@ -61,7 +62,7 @@
                 <img id="icon__search" src="img/icons/search.svg" alt="icon search" />
             </div>
         </div>
-
+        
         <div class="shortcuts">
             <div class="shortcuts-area">
                 <din-links></din-links>
@@ -73,7 +74,7 @@
                 </div>
             </div>
         </div>
-
+        
         <footer>
             <span> 
                 Copyright © 2022,
@@ -86,14 +87,14 @@
 
     <div class="secret-msg">
         <span class="icon-arrow">^</span>
-        <span class="message">Secret Message</span>
+        <span class="message" onclick="displaydonut(); donutanim();">CLICK HERE!</span>
     </div>
-
-
+    
+    
     <div class="fantastic-door">
         <iframe id="frame__door" src="doc/door.html" title="fantastic-door" frameborder="0"></iframe>
     </div>
-
+    
     <dialog id="dialog__form" part="dialog" aria-labelledby="title">
         <form id="form__shortcuts" action="javascript:void(0)">
             <span class="title">Adicionar atalho</span>
@@ -114,13 +115,29 @@
             </div>
         </form>
     </dialog>
+    
+    
+    <dialog id="dialog__donut" part="dialog" aria-labelledby="title">
+        <div class="popup-donut">
+            <div>
+                <span>This is not a donut.</span>
+                <button class="close-donut" onclick="closedonut(); donutanim();">X</button>
+            </div>
 
+            <div id="donut" class="fantastic-donut">
+                <pre id="asciidonut"></pre>
+            </div>
+        </div>
+    </dialog>
 
+    
     <script src="scripts/global.js" type="text/javascript"></script>
     <script src="scripts/input.js" type="text/javascript"></script>
     <script src="scripts/read-json.js" type="text/javascript"></script>
     <script src="scripts/shortcuts.js" type="text/javascript"></script>
     <script src="scripts/form.js" type="text/javascript"></script>
-
+    <script src="scripts/dialog-donut.js" type="text/javascript"></script>
+    <script src="scripts/typing.js" type="text/javascript"></script>
+    
 </body>
 </html>

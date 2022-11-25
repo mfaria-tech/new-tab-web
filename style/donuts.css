@@ -1,0 +1,18 @@
+#donut {
+    background-color: #15191c;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: bold;
+}
+
+pre {
+    counter-reset: line-numbering;
+    white-space: pre;
+    overflow-x: auto;
+    word-break: inherit;
+    word-wrap: inherit;
+    padding: 1.125em;
+    line-height: 1.11;
+    font-size: 16px;
+}
+

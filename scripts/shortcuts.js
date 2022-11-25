@@ -12,24 +12,10 @@
 "use strict";
 
 
-// Function to display POPUP
+// Function to display POPUP_FORM
 function DisplayPopup() {
-    POPUP.setAttribute("open", "");
+    POPUP_FORM.setAttribute("open", "");
 }
-
-
-// Function to create new shortcut button
-function CreateShortcut() {
-
-}
-
-
-// Function to update shortcuts and close Popup
-function UpdateShortcuts() {
-
-}
-
-
 
 
 // Add event on click to button plus

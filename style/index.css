@@ -47,6 +47,10 @@ footer {
     height: 300px;
 }
 
+.fantastic-donut {
+    width: 845px;
+    border-radius: var(--default-border-radius);
+}
 
 .secret-msg {
     background: white;
@@ -74,12 +78,17 @@ footer {
     right: -255px;
 }
 
-
 .shortcuts {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+
+/*! =========================== */
+/*!         STYLE BY ID         */
+/*! =========================== */
 
 
 
@@ -104,7 +113,13 @@ iframe.chrome-new-page {
 }
 
 
+.secret-msg span:hover {
+    opacity: 0.8;
+}
+
+
 .shortcuts iframe {
     width: 564px;
     height: auto;
 }
+
