@@ -1,6 +1,6 @@
 /*
  * TITLE:   input.js
- * AUTOR:   mfaria-tech
+ * AUTHOR:   mfaria-tech
  * DATE:    09.11.2022
  * 
  * DESCRIPTION:

@@ -21,6 +21,7 @@ div[id*="link__"] {
     transform: scale(calc(5/6));
     background: white;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 

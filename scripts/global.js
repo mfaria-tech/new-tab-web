@@ -1,6 +1,6 @@
 /*
  * TITLE:   global.js
- * AUTOR:   mfaria-tech
+ * AUTHOR:   mfaria-tech
  * DATE:    11.11.2022
  * 
  * DESCRIPTION:

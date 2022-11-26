@@ -1,6 +1,6 @@
 /*
  * TITLE:   donuts.js
- * AUTOR:   mfaria-tech
+ * AUTHOR:   mfaria-tech
  * DATE:    25.11.2022
  * 
  * DESCRIPTION:
@@ -33,6 +33,11 @@
             }
 
 
+            // DRAW FRAMEBUFFER
+            //    Render 3D perspective in 2D screen (projection x, y, z points --> Hologram)
+            //    Storage z-buffer, coordinates for the z point
+            //        z^(-1)=1/z
+            //    Generate pixel by coordinate
             for ( let j = 0; j < 6.28; j += 0.07 ) { // j <=> theta
                 let ct = Math.cos(j), st = Math.sin(j);
 
