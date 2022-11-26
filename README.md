@@ -1,9 +1,9 @@
----
+<!--
 Title:    MY NEW TAB - WEB PAGE PERSONAL  
 Author:   Marcus Faria
 Date:     26.11.2022  
 Comment:  My new tab. A web page similar to browsers' home pages
----
+-->
 
 
 Personal New Tab
